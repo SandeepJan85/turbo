@@ -27,7 +27,6 @@ public class DispatcherThread implements Runnable{
 
 	    public void run(){
 		    // TODO Auto-generated method stub
-	    	System.out.println("hello upload");
 		    ChannelSftp sftp = connection.remoteConnect();
 		    getAllFiles(sftp,connection.getSource());
 		    System.out.println(allFilesArrayList.size());
